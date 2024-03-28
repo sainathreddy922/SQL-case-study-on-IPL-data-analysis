@@ -1,5 +1,50 @@
 create database ipl;
 use ipl;
+CREATE TABLE deliveries(
+   match_id         INTEGER  NOT NULL  
+  ,inning           INTEGER  NOT NULL
+  ,batting_team     VARCHAR(27) NOT NULL
+  ,bowling_team     VARCHAR(27) NOT NULL
+  ,over_no             INTEGER  NOT NULL
+  ,ball             INTEGER  NOT NULL
+  ,batsman          VARCHAR(17) NOT NULL
+  ,non_striker      VARCHAR(17) NOT NULL
+  ,bowler           VARCHAR(17) NOT NULL
+  ,is_super_over_no    BIT  NOT NULL
+  ,wide_runs        INTEGER  NOT NULL
+  ,bye_runs         INTEGER  NOT NULL
+  ,legbye_runs      INTEGER  NOT NULL
+  ,noball_runs      INTEGER  NOT NULL
+  ,penalty_runs     INTEGER  NOT NULL
+  ,batsman_runs     INTEGER  NOT NULL
+  ,extra_runs       INTEGER  NOT NULL
+  ,total_runs       INTEGER  NOT NULL
+  ,player_dismissed VARCHAR(17)
+  ,dismissal_kind   VARCHAR(17)
+  ,fielder          VARCHAR(20)
+);
+
+CREATE TABLE matches(
+   id              INTEGER  NOT NULL PRIMARY KEY 
+  ,season          INTEGER  NOT NULL
+  ,city            VARCHAR(14) NOT NULL
+  ,date            DATE  NOT NULL
+  ,team1           VARCHAR(27) NOT NULL
+  ,team2           VARCHAR(27) NOT NULL
+  ,toss_winner     VARCHAR(27) NOT NULL
+  ,toss_decision   VARCHAR(5) NOT NULL
+  ,result          VARCHAR(6) NOT NULL
+  ,dl_applied      BIT  NOT NULL
+  ,winner          VARCHAR(27) NOT NULL
+  ,win_by_runs     INTEGER  NOT NULL
+  ,win_by_wickets  INTEGER  NOT NULL
+  ,player_of_match VARCHAR(17) NOT NULL
+  ,venue           VARCHAR(52) NOT NULL
+  ,umpire1         VARCHAR(21)
+  ,umpire2         VARCHAR(14)
+  ,umpire3         VARCHAR(30)
+);
+
 select * from deliveries;
 select * from matches;
 
