@@ -1,8 +1,8 @@
 # SQL-case-study-on-IPL-data analysis
-Case Study on IPL Data Analysis
+# Case Study on IPL Data Analysis
 Worked on comprehensive case study on a dataset that contained information about all Indian premier league [Cricket league] matches of seasons 2008,2009 and 2017.
 
-Dataset Information
+# Dataset Information
 
 In this dataset it consists of two tables they are matches,deliveries
 
@@ -10,7 +10,7 @@ matches :It conatains of all details about the id, season, city, date, team1, te
 
 deliveries : It conatins of all details about the match_id, inning, batting_team, bowling_team, over, ball, batsman, non_striker, bowler, is_super_over, wide_runs, bye_runs, legbye_runs, noball_runs, penalty_runs, batsman_runs, extra_runs, total_runs, player_dismissed, dismissal_kind, fielder.
 
-17 Questions Explored
+# 17 Questions Explored
 
 1.WHAT ARE THE TOP 5 PLAYERS WITH THE MOST PLAYER OF THE MATCH AWARDS?
 
